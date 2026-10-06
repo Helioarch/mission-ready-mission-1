@@ -346,15 +346,14 @@ main{
     animation-name: deliver-mail;
     animation-duration: 6s;
     animation-delay: 1s;
-    /* animation-timing-function: ease-in; */
+    animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes deliver-mail {
     0% {left:-20%; opacity: 0;}
-    5%{left:-14%; opacity: 1;}
+    15%{left:-14%; opacity: 1;}
     40%{left:-17%; opacity: 1;}
-    /* 80%{left:10%; opacity: 1;} */
     100%{left:40%; opacity: 0;}
 }
 
