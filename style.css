@@ -8,8 +8,6 @@ White FAFCF7
 
 */
 
-
-
 /* ----- GLOBAL ----- */
 * {
     box-sizing: border-box;
@@ -57,7 +55,6 @@ header {
     text-align: center;
     font-size: 20px;   
     gap: 15px;
-    /* margin: 50px 100px; */
 }
 
 
@@ -124,10 +121,6 @@ main{
     z-index: 1;
     margin-left: -100px;
     padding-left: 150px;
-
-    /* flex-basis: 100%; */
-    /* margin-right: -200px; */
-    /* margin-right: -100%; */
 }
 
 /* merge both h1 n h2? */
@@ -135,28 +128,19 @@ main{
     text-shadow: 1px 1px 3px white;
     margin: 0;
     padding-top: 70px;
-    /* margin: 70px 0 0 50px; */
-    /* margin: 10% 0 0 0; */
-    /* margin: 1em 0 0 0; */
 }
 
 .hero-text h2 {
     text-shadow: 1px 1px 3px white;
     margin: 0;
     padding-bottom: 70px;
-    /* margin: 0 0 70px 50px; */
-    /* margin: 0 0 1em 0; */
-    /* margin: 5px 0; */
 }
 
 .hero-image {
-    /* margin-left: -200px; */
     height: 250px;
     width: 250px;
     object-fit: cover;
     object-position: bottom;
-    /* flex-shrink: 0; */
-    /* flex-basis: 80%; */
 }
 
 #post-intro {
@@ -167,21 +151,6 @@ main{
     line-height: 1.5;
     font-size: 18px;
 }
-
-/* #post-intro {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 15px 25px;
-
-    text-align: center;
-    line-height: 1.6;
-    font-size: 18px;
-
-    border: 4px solid #E89B4D;
-    border-left: 4px solid #E89B4D;
-    border-right: 4px solid #E89B4D;
-} */
-
 
 /* ----- POST BODY ----- */
 
@@ -252,26 +221,7 @@ main{
     border-radius: 5px;
     padding: 4px 8px;
     margin: 0 8px 0 0;
-
-    /* color: #E89B4D; */
-    /* border: 1px solid #2F3E32; */
-    /* border-radius: 10%; */
-    /* padding: 10px; */
-    /* font-weight: 700; */
-    /* width: 100px; */
 }
-
-/* .foodlist-subtitle {
-    display: inline-block;
-    color: white;
-    background-color: #E89B4D;
-    font-weight: bold;
-
-    padding: 4px 8px;
-    margin-right: 8px;
-    border-radius: 5px;
-} */
-
 
 /* ----- Email Form ----- */
 
@@ -291,10 +241,6 @@ main{
 }
 
 #email-form {
-    /* width: 100%; */
-    /* max-width: 600px; */
-    /* width: 800px; */
-    
     width: 80%;
     max-width: 800px;
 
@@ -302,14 +248,6 @@ main{
     display: flex;
     flex-direction: column;
 }
-
-/* #email-form input{
-    flex: 1 1 75%;
-}
-
-#email-form label{
-    flex: 0 0 25%;
-} */
 
 .form-row {
     display: flex;
@@ -322,7 +260,6 @@ main{
     display:flex;
     align-items: center;
     gap: 5px;
-    /* flex-basis: 50%; */
 }
 
 .form-row input{
@@ -335,10 +272,7 @@ main{
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-
-    /* width: 50%; */
     margin: 0 auto;
-    
 }
 
 .submit-btn:hover {
