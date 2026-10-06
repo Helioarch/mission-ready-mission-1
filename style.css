@@ -207,6 +207,12 @@ main{
     width: 250px;
     height: 300px;
     object-fit: cover;
+    transition: width 1s, height 1s, object-fit 1s;
+}
+
+.foodlist-image:hover {
+    width: 325px;
+    height: 390px;
 }
 
 .foodlist-text {
