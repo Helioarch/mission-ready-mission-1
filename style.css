@@ -178,12 +178,14 @@ main{
     width: 250px;
     height: 300px;
     object-fit: cover;
-    transition: width 1s, height 1s, object-fit 1s;
+    
+    transition: transform 0.6s, box-shadow 0.3s ease;
 }
 
 .foodlist-image:hover {
-    width: 325px;
-    height: 390px;
+    transform: scale(1.4);
+    border: 3px solid #E89B4D;
+    box-shadow: rgba(71, 71, 71, 0.2) 0px 4px 10px 0px;
 }
 
 .foodlist-text {
