@@ -112,6 +112,7 @@ main{
 }
 
 .hero-text {
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -320,8 +321,6 @@ footer > h3{
     color:#2F3E32;
 }
 
-
-
 @media screen and (max-width: 900px){
     #header-content, .foodlist-item, #hero-banner{
         flex-direction: column;
@@ -330,7 +329,12 @@ footer > h3{
         text-align: center;
     }    
 
+    #hero-banner{
+        box-shadow: none;
+    }
+
     .hero-text {
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         background-color: #E89B4D;
         margin: 0;
         padding: 0 20px;
