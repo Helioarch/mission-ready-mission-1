@@ -107,17 +107,16 @@ main{
 
 #hero-banner{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
 }
 
 .hero-text {
-    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     
-    flex:1;
+    flex: 1;
     background-image: linear-gradient(to left, #E89B4D 50%, transparent 100%);
     z-index: 1;
     margin-left: -100px;
@@ -167,10 +166,10 @@ main{
     display: flex;
     border: 3px solid #2F3E32;
     padding: 30px;
-    gap: 10px
+    gap: 10px;
 }
 
-.foodlist-mirror{
+.foodlist-mirror {
     flex-direction: row-reverse;
 }
 
@@ -240,7 +239,7 @@ main{
     align-items: center;
 }
 
-#contact-section hr{
+#contact-section hr {
     width: 100%;
 }
 
@@ -259,14 +258,14 @@ main{
     gap: 20px;
 }
 
-.form-row > div{
+.form-row > div {
     flex: 1 1 300px;
     display:flex;
     align-items: center;
     gap: 5px;
 }
 
-.form-row input{
+.form-row input {
     flex: 1;
 }
 
@@ -290,15 +289,15 @@ main{
     animation-name: deliver-mail;
     animation-duration: 6s;
     animation-delay: 1s;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes deliver-mail {
-    0% {left:-40%; opacity: 0;}
-    15%{left:-34%; opacity: 1;}
-    40%{left:-37%; opacity: 1;}
-    100%{left:40%; opacity: 0;}
+    0% { left: -40%; opacity: 0; }
+    15%{ left: -34%; opacity: 1; }
+    40%{ left: -37%; opacity: 1; }
+    100%{ left: 40%; opacity: 0; }
 }
 
 
@@ -314,13 +313,13 @@ footer > h3{
     padding: 0 10px;
 }
 
-#socials-nav{
+#socials-nav {
     display: flex;
-    gap: 10px
+    gap: 10px;
 }
 
-#socials-nav a{
-    color:#2F3E32;
+#socials-nav a {
+    color: #2F3E32;
 }
 
 @media screen and (max-width: 900px){
