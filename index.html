@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <link 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet"/>
+        <title>Helio's BiteQuest - Common Exotic Bites</title>
+    </head>
+
+    <body>
+
+        <!-- Header! Logo Center, Menu right -->
+        <header>
+            <!-- Before div, HR becomes vertical line at the end of flexbox -->
+            <!-- Wrap logo and nav in div and apply flexbox there instead so doesn't include HR -->
+            <div id="header-content">
+                <img id="logo" alt="Blog logo" src="images/blog-logo.png"/>
+                <nav id="site-nav">
+                    <ul>
+                        <li class="btn nav-link"><a href="#">Home</a></li>
+                        <li class="btn nav-link"><a href="#">Posts</a></li>
+                        <li class="btn nav-link"><a href="#">About</a></li>
+                        <li class="btn nav-link"><a href="#">Random Bite</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <hr/>
+        </header>
+        
+        <!-- 3 section, Header w/intro, Food list, Email form -->
+        <main>
+            <article id="post-article">
+                <section id="post-header">
+                    <div id="hero-banner">
+                        <img class="hero-image" alt="Taiwanese Godzilla Ramen" src="images/food-godzilla.jpeg"/>
+                        <div class="hero-text">
+                            <h1>Exotic Bites! Ordinary to Locals?</h1>
+                            <h2>Asian Edition</h2>
+                        </div>
+                        <!-- <img id="hero-imgph" alt="Taiwanese Godzilla Ramen"/> -->
+                    </div>
+                    
+                    <p id="post-intro">Let me introduce you to some local foods I tried and loved during my travels around Asia. Don’t let the picture of Taiwan’s infamous Godzilla Ramen scare you, though! The foods on this list are much more ordinary—local favourites you might find at a convenience store or local eatery around the corner, even if they seem rather unusual back home in Australia or New Zealand... unless you know where to look. 😉</p>
+                </section>
+
+                <!-- Start of food list -->
+                <section id="post-body">
+
+                    <!-- Chicken Feet -->
+                    <div class="foodlist-item">
+                        <img class="foodlist-image" alt="Chicken Feet Dimsum" src="images/food-chicken-feet.avif"/>
+                        <div class="foodlist-text">
+                            <h3>Chicken Feet - 📍Cantonese/Southern China</h3>
+                            <p><span class="foodlist-subtitle">What is it?</span>Chicken feet typically deep-fried, braised and steamed until tender, often served with a savoury sauce.</p>
+                            <p><span class="foodlist-subtitle">My Take</span>I’ll start the list with a staple of dim sum cuisine: chicken feet! You’re mainly eating the skin, which puffs up and soaks up all that sauce as it cooks. Soft, sweet and savoury!</p>
+                        </div>
+                    </div>
+
+                    <!-- Gyutan -->
+                    <div class="foodlist-item foodlist-mirror">
+                        <img class="foodlist-image" alt="Beef Tongue Dish" src="images/food-gyutan.avif"/>
+                        <div class="foodlist-text">
+                            <h3>Gyutan (Beef tongue) - 📍Sendai, Japan</h3>
+                            <p><span class="foodlist-subtitle">What is it?</span>Sliced beef tongue, usually seasoned and grilled over charcoal. Sendai Specialty Since 1948</p>
+                            <p><span class="foodlist-subtitle">My Take</span>Once you get past the fact that the steak can technically taste you back, this is basically a chewier version of steak. It still has all that meaty goodness and is surprisingly juicy, despite looking like it should just be a tough lump of muscle.</p>
+                        </div>
+                    </div>
+
+                    <!-- Paru Goreng -->
+                    <div class="foodlist-item">
+                        <img class="foodlist-image" alt="Paru Goreng (Fried Lungs)" src="images/food-lungs.webp"/>
+                        <div class="foodlist-text">
+                            <h3>Paru Goreng (Fried Lungs) - 📍Indonesia</h3>
+                            <p><span class="foodlist-subtitle">What is it?</span>Beef lung that's seasoned, cooked and fried until crisp on the outside.</p>
+                            <p><span class="foodlist-subtitle">My Take</span>There are plenty of ways to prepare lungs, but the simple deep-fried version I had back in my home country of Indonesia was perfect as is! It can be an acquired taste, though, thanks to its rather peculiar taste and texture.</p>
+                        </div>
+                    </div>
+
+                    <!-- Natto -->
+                    <div class="foodlist-item foodlist-mirror">
+                        <img class="foodlist-image" alt="Natto" src="images/food-natto.jpg"/>
+                        <div class="foodlist-text">
+                            <h3>Natto - 📍Japan</h3>
+                            <p><span class="foodlist-subtitle">What is it?</span>Fermented soybeans famous for their sticky, stringy texture and strong, distinctive aroma.</p>
+                            <p><span class="foodlist-subtitle">My Take</span>“Pour soy sauce and mustard over the stinky beans, then mix them until they’re slimy, gooey and bubbly” might not sound particularly appetising, but served over a fresh bowl of rice, it becomes one of the most comforting foods on this list! Commonly eaten as a quick breakfast, it’s a humble Japanese staple that’s also packed with nutrients.</p>
+                        </div>
+                    </div>
+
+                    <!-- Durian -->
+                    <div class="foodlist-item">
+                        <img class="foodlist-image" alt="Durian" src="images/food-durian.webp"/>
+                        <div class="foodlist-text">
+                            <h3>Durian - 📍Southeast Asia (primarily Thailand/Malaysia)</h3>
+                            <p><span class="foodlist-subtitle">What is it?</span>A large, spiky tropical fruit with rich, creamy flesh and an extremely distinctive smell.</p>
+                            <p><span class="foodlist-subtitle">My Take</span>Dubbed the “King of Fruits,” ye who dares brave the smell shall be rewarded with the rich, creamy and sweet flesh of this golden fruit. It’s probably the most polarising fruit—you either hate it or love it. And I freaking love it.</p>
+                        </div>
+                    </div>
+
+                    <!-- Century Egg -->
+                    <div class="foodlist-item foodlist-mirror">
+                        <img class="foodlist-image" alt="Century Egg" src="images/food-century-egg.webp"/>
+                        <div class="foodlist-text">
+                            <h3>Century Egg - 📍China</h3>
+                            <p><span class="foodlist-subtitle">What is it?</span>Eggs preserved through an alkaline curing process that transforms the white into a dark jelly and the yolk into a rich, creamy centre.</p>
+                            <p><span class="foodlist-subtitle">My Take</span>You might've heard this one before, just like its name suggests, the "1000-year old egg" or "century egg" looks equally rotten where the egg whites turn black and translucent and the yellow turns murky grey-green. But it is a savoury bomb of creamy goodness, especially lovely when paired with congee.</p>
+                        </div>
+                    </div>
+
+                    <!-- Iron Egg -->
+                    <div class="foodlist-item">
+                        <img class="foodlist-image" alt="Taiwanese Iron Egg" src="images/food-iron-egg.jpg"/>
+                        <div class="foodlist-text">
+                            <h3>Iron Egg - 📍Taiwan</h3>
+                            <p><span class="foodlist-subtitle">What is it?</span>Small eggs repeatedly braised in a spiced soy mixture and dried, giving them a dark colour and dense, chewy texture.</p>
+                            <p><span class="foodlist-subtitle">My Take</span>Surprise! The last item on this list is yet another egg. I had the quail egg version of the iron egg, but this is by far the least egg-like of the bunch. The outside is tough and almost plastic-y—I’d even go as far as saying there’s a slight crunch when you bite into it.</p>
+                        </div>
+                    </div>
+
+                </section>
+            </article>
+
+            <!-- Email Form -->
+            <section id="contact-section">
+                <hr/>
+                <h1>Contact Me</h1>
+                <form id="email-form" action="mailto:someone@example.com" method="post">
+                    <div class="form-row">
+                        <div>
+                            <label>Name:</label><input type="text" name="name" />
+                        </div>
+                        <div>
+                            <label>Email:</label><input type="email" name="email" />
+                        </div>
+                    </div>
+
+                    <br/>
+                    <label>Message </label>
+                    <textarea name="message" rows="5" cols="33" placeholder="Type your message here"></textarea> <br/>
+                    
+                    <label Disabled>Ref ID </label><input type="text" name="ref" disabled>
+                    <br/>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input class="submit-btn" type="submit" value="Submit"/>
+                </form>
+                <hr/>
+            </section>
+        </main>
+
+        <!-- Socials -->
+        <footer>
+            <h3>Copyright 2026 by Ian Wijaya. All rights reserved.</h3>
+            <nav id="socials-nav">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+            </nav>
+        </footer>
+    </body>
+</html>
