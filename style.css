@@ -357,9 +357,9 @@ main{
 }
 
 @keyframes deliver-mail {
-    0% {left:-20%; opacity: 0;}
-    15%{left:-14%; opacity: 1;}
-    40%{left:-17%; opacity: 1;}
+    0% {left:-40%; opacity: 0;}
+    15%{left:-34%; opacity: 1;}
+    40%{left:-37%; opacity: 1;}
     100%{left:40%; opacity: 0;}
 }
 
