@@ -74,6 +74,9 @@ let curPage = 0;
 let pageToDisplay = 1;
 const foodPerPage = 3;
 const postBodyEl = document.getElementById('post-body');
+const showMoreBtnEl = document.getElementById('show-more-btn');
+
+showMoreBtnEl.addEventListener('click',showMore);
 
 function createFoodHTML(food, mirrorFlag) {
   return `<div class="foodlist-item${mirrorFlag ? " foodlist-mirror" : ""}">
@@ -100,6 +103,13 @@ function updateArticle() {
     if (idx >= foodList.length) continue;
     postBodyEl.innerHTML += createFoodHTML(foodList[idx], idx % 2 === 1);
   }
+  
+  curPage = pageToDisplay;
+}
+
+function showMore() {
+    pageToDisplay++;
+    updateArticle();
 }
 
 function hideShowMore() {}
