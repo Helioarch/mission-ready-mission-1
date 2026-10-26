@@ -96,7 +96,7 @@ function updateArticle() {
   const endIndex = pageToDisplay * foodPerPage - 1;
 
   if (endIndex >= foodList.length) {
-    hideShowMore();
+    hideShowMoreBtn();
   }
 
   for (let idx = startIndex; idx <= endIndex; idx++) {
@@ -112,7 +112,9 @@ function showMore() {
     updateArticle();
 }
 
-function hideShowMore() {}
+function hideShowMoreBtn() {
+    showMoreBtnEl.style.display = 'none';
+}
 
 // initialize the page
 updateArticle();
