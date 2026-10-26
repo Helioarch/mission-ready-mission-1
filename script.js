@@ -70,6 +70,11 @@ const foodList = [
   },
 ];
 
+let curPage = 0;
+let pageToDisplay = 1;
+const foodPerPage = 3;
+const postBodyEl = document.getElementById('post-body');
+
 function createFoodHTML(food, mirrorFlag) {
   return `<div class="foodlist-item${mirrorFlag ? " foodlist-mirror" : ""}">
     <img class="foodlist-image" alt="${food.imageAlt}" src="${food.image}"/>
@@ -81,14 +86,12 @@ function createFoodHTML(food, mirrorFlag) {
 </div>`;
 }
 
-let curPage = 0,
-  pageToDisplay = 1;
-const foodPerPage = 3;
 function updateArticle() {
   if (curPage >= pageToDisplay) return;
 
   const startIndex = curPage ? curPage * foodPerPage - 1 : 0;
   const endIndex = pageToDisplay * foodPerPage - 1;
+
 
   if (endIndex >= foodList.length) {
     hideShowMore();
@@ -101,5 +104,3 @@ function updateArticle() {
 }
 
 function hideShowMore() {}
-
-console.log(foodList[0]);
