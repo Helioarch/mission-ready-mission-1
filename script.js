@@ -100,7 +100,7 @@ function updateArticle() {
   }
 
   for (let idx = startIndex; idx <= endIndex; idx++) {
-    if (idx >= foodList.length) continue;
+    if (idx >= foodList.length) break;
     postBodyEl.innerHTML += createFoodHTML(foodList[idx], idx % 2 === 1);
   }
   
