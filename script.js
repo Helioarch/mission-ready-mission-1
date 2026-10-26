@@ -89,9 +89,8 @@ function createFoodHTML(food, mirrorFlag) {
 function updateArticle() {
   if (curPage >= pageToDisplay) return;
 
-  const startIndex = curPage ? curPage * foodPerPage - 1 : 0;
+  const startIndex = curPage * foodPerPage;
   const endIndex = pageToDisplay * foodPerPage - 1;
-
 
   if (endIndex >= foodList.length) {
     hideShowMore();
@@ -99,8 +98,11 @@ function updateArticle() {
 
   for (let idx = startIndex; idx <= endIndex; idx++) {
     if (idx >= foodList.length) continue;
-    createFoodHTML(foodList[idx], idx % 2 === 1);
+    postBodyEl.innerHTML += createFoodHTML(foodList[idx], idx % 2 === 1);
   }
 }
 
 function hideShowMore() {}
+
+// initialize the page
+updateArticle();
