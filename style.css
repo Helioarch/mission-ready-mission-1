@@ -102,9 +102,15 @@ header {
     text-align: center;
 }
 
+.button-container {
+    padding: 0;
+}
+
 .nav-link button{
+    padding: 10px 15px;
     border: none;
     background: none;
+    cursor: pointer;
     color: #E89B4D;
 }
 
