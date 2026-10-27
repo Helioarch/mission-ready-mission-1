@@ -1,3 +1,4 @@
+// Define Food class containing details of the Food and Image
 class Food {
   constructor(name, origin, image, imageAlt, description, comment) {
     this.name = name;
@@ -8,6 +9,7 @@ class Food {
     this.comment = comment;
   }
 
+  // Function to return the item card to inject to post-body
   createFoodHTML(mirrorFlag) {
     return `<div class="foodlist-item${mirrorFlag ? " foodlist-mirror" : ""}">
     <img class="foodlist-image" alt="${this.imageAlt}" src="${this.image}"/>
@@ -20,6 +22,7 @@ class Food {
   }
 }
 
+// Array holding the foods
 const foodList = [];
 foodList.push(
   new Food(
@@ -80,28 +83,35 @@ foodList.push(
   ),
 );
 
+// Variables related for the paging system, curPage start at 0 as page will be initialized below to get to page 1
 let curPage = 0;
 let pageToDisplay = 1;
-const foodPerPage = 3;
+const foodPerPage = 3; // Defines how many food show when show more is pressed
+
+// Element selectors
 const bodyEl = document.body;
 const postBodyEl = document.getElementById("post-body");
 const showMoreBtnEl = document.getElementById("show-more-btn");
 const darkModeBtnEl = document.getElementById("dark-mode-btn");
 
+// Event Listeners
 showMoreBtnEl.addEventListener("click", showMore);
 darkModeBtnEl.addEventListener("click", toggleDarkMode);
 
-
+// Function to inject Food into post-body if pageToDisplay > curPage
 function updateArticle() {
   if (curPage >= pageToDisplay) return;
 
+  // Calculate which array index to start and end depending on page number
   const startIndex = curPage * foodPerPage;
   const endIndex = pageToDisplay * foodPerPage - 1;
 
+  // Hide the show more button if it's the last page
   if (endIndex >= foodList.length) {
     hideShowMoreBtn();
   }
 
+  // Loop through the array index to generate and inject the HTML to post-body
   for (let idx = startIndex; idx <= endIndex; idx++) {
     if (idx >= foodList.length) break;
     postBodyEl.innerHTML += foodList[idx].createFoodHTML(idx % 2 === 1);
@@ -110,18 +120,21 @@ function updateArticle() {
   curPage = pageToDisplay;
 }
 
+// Show More Button increase the counter which defines the endIndex
 function showMore() {
   pageToDisplay++;
   updateArticle();
 }
 
+// Hides show more button programatically
 function hideShowMoreBtn() {
   showMoreBtnEl.style.display = "none";
 }
 
+// Toggles the dark-mode class in the body element
 function toggleDarkMode() {
   bodyEl.classList.toggle('dark-mode');
 }
 
-// initialize the page
+// Initialize the page the first time the page is open
 updateArticle();
