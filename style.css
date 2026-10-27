@@ -32,7 +32,10 @@ h1,h2,h3,h4 {
     color: #2F3E32;
 }
 
-.dark-mode h1,h2,h3,h4{
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4{
     color: #EAF4E2;
 }
 
