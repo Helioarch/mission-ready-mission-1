@@ -7,6 +7,17 @@ class Food {
     this.description = description;
     this.comment = comment;
   }
+
+  createFoodHTML(mirrorFlag) {
+    return `<div class="foodlist-item${mirrorFlag ? " foodlist-mirror" : ""}">
+    <img class="foodlist-image" alt="${this.imageAlt}" src="${this.image}"/>
+    <div class="foodlist-text">
+        <h3>${this.name} - 📍${this.origin}</h3>
+        <p><span class="foodlist-subtitle">What is it?</span>${this.description}</p>
+        <p><span class="foodlist-subtitle">My Take</span>${this.comment}</p>
+    </div>
+</div>`;
+  }
 }
 
 const foodList = [];
@@ -77,17 +88,6 @@ const showMoreBtnEl = document.getElementById("show-more-btn");
 
 showMoreBtnEl.addEventListener("click", showMore);
 
-function createFoodHTML(food, mirrorFlag) {
-  return `<div class="foodlist-item${mirrorFlag ? " foodlist-mirror" : ""}">
-    <img class="foodlist-image" alt="${food.imageAlt}" src="${food.image}"/>
-    <div class="foodlist-text">
-        <h3>${food.name} - 📍${food.origin}</h3>
-        <p><span class="foodlist-subtitle">What is it?</span>${food.description}</p>
-        <p><span class="foodlist-subtitle">My Take</span>${food.comment}</p>
-    </div>
-</div>`;
-}
-
 function updateArticle() {
   if (curPage >= pageToDisplay) return;
 
@@ -100,7 +100,7 @@ function updateArticle() {
 
   for (let idx = startIndex; idx <= endIndex; idx++) {
     if (idx >= foodList.length) break;
-    postBodyEl.innerHTML += createFoodHTML(foodList[idx], idx % 2 === 1);
+    postBodyEl.innerHTML += foodList[idx].createFoodHTML(idx % 2 === 1);
   }
 
   curPage = pageToDisplay;
