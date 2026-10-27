@@ -6,6 +6,9 @@ Dark 2F3E32
 Accent E89B4D
 White FAFCF7
 
+darkmode
+Black 19251D
+
 */
 
 /* ----- GLOBAL ----- */
@@ -20,8 +23,17 @@ body {
     margin: 0;
 }
 
+.dark-mode {
+    background-color: #19251D;
+    color: #EAF4E2;
+}
+
 h1,h2,h3,h4 {
     color: #2F3E32;
+}
+
+.dark-mode h1,h2,h3,h4{
+    color: #EAF4E2;
 }
 
 /* when used in column flexbox only 2 pixel width */
@@ -87,6 +99,10 @@ main{
     background-color: #FAFCF7;
 }
 
+.dark-mode main{
+    background-color: #2F3E32;
+}
+
 #post-article {
     padding: 70px;
 
@@ -136,6 +152,10 @@ main{
     padding-bottom: 70px;
 }
 
+.dark-mode .hero-text h1,.dark-mode .hero-text h2{
+    text-shadow: 1px 1px 3px #19251D;
+}
+
 .hero-image {
     height: 250px;
     width: 250px;
@@ -167,6 +187,10 @@ main{
     border: 3px solid #2F3E32;
     padding: 30px;
     gap: 10px;
+}
+
+.dark-mode .foodlist-item {
+    border: 3px solid #E89B4D;
 }
 
 .foodlist-mirror {
@@ -245,6 +269,10 @@ main{
     background-color: #2F3E32;
 }
 
+.dark-mode #show-more-btn:hover {
+    background-color: #19251D;
+}
+
 /* ----- Email Form ----- */
 
 #contact-section {
@@ -256,6 +284,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.dark-mode #contact-section {
+    background-color: #19251D;
+    color: #EAF4E2;
 }
 
 #contact-section hr {
@@ -339,6 +372,10 @@ footer > h3{
 
 #socials-nav a {
     color: #2F3E32;
+}
+
+.dark-mode #socials-nav a{
+    color: #EAF4E2;
 }
 
 @media screen and (max-width: 900px){
