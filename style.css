@@ -73,13 +73,18 @@ header {
 .btn {
     font-family: inherit;
     border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
     background-color: #E89B4D;
 }
 
-.btn:hover a {
+.dark-mode .btn:hover{
+    background-color: #2F3E32;
+}
+
+.btn:hover a, .btn:hover i {
     color: #EAF4E2;
 }
 
@@ -94,6 +99,12 @@ header {
     text-align: center;
 }
 
+.nav-link button{
+    border: none;
+    background: none;
+    color: #E89B4D;
+}
+
 /* ----- MAIN ----- */
 main{
     background-color: #FAFCF7;
@@ -101,6 +112,14 @@ main{
 
 .dark-mode main{
     background-color: #2F3E32;
+}
+
+#socials-nav a {
+    color: #2F3E32;
+}
+
+.dark-mode #socials-nav a{
+    color: #EAF4E2;
 }
 
 #post-article {
