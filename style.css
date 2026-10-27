@@ -123,14 +123,6 @@ main{
     background-color: #2F3E32;
 }
 
-#socials-nav a {
-    color: #2F3E32;
-}
-
-.dark-mode #socials-nav a{
-    color: #EAF4E2;
-}
-
 #post-article {
     padding: 70px;
 
