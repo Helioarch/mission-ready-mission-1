@@ -83,10 +83,14 @@ foodList.push(
 let curPage = 0;
 let pageToDisplay = 1;
 const foodPerPage = 3;
+const bodyEl = document.body;
 const postBodyEl = document.getElementById("post-body");
 const showMoreBtnEl = document.getElementById("show-more-btn");
+const darkModeBtnEl = document.getElementById("dark-mode-btn");
 
 showMoreBtnEl.addEventListener("click", showMore);
+darkModeBtnEl.addEventListener("click", toggleDarkMode);
+
 
 function updateArticle() {
   if (curPage >= pageToDisplay) return;
@@ -113,6 +117,10 @@ function showMore() {
 
 function hideShowMoreBtn() {
   showMoreBtnEl.style.display = "none";
+}
+
+function toggleDarkMode() {
+  bodyEl.classList.toggle('dark-mode');
 }
 
 // initialize the page
