@@ -85,7 +85,7 @@ const foodList = [
 // Variables related for the paging system, curPage start at 0 as page will be initialized below to get to page 1
 let curPage = 0;
 let pageToDisplay = 1;
-const foodPerPage = 1; // Defines how many food show when show more is pressed
+const foodPerPage = 3; // Defines how many food show when show more is pressed
 
 // Element selectors
 const bodyEl = document.body;
